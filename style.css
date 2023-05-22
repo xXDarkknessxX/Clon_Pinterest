@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+}
+header {
+  height: 100px;
+  width: 100vw;
+  background-color: white;
+  margin: 0px;
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+#pinterest-icon {
+  margin-left: 5px;
+  margin-right: 0px;
+  padding: 8px;
+}
+#pinterest-icon:hover {
+  background-color: rgba(232, 232, 232, 0.454);
+  padding: 8px;
+  border-radius: 30px;
+}
+
+/*Inicio parte izquierda de el nav*/
+header nav .nav-left {
+  display: flex;
+  width: 50%;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+header nav .nav-left img {
+  height: auto;
+  width: 30px;
+}
+
+header nav .nav-left button {
+  margin: auto 5px auto 3px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 40px;
+  font-size: 17px;
+}
+
+header nav .nav-left #boton-inicio {
+  margin-left: 5px;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 580px) {
+  header nav .nav-left button {
+    margin: 0px;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 40px;
+    font-size: 17px;
+  }
+
+  header nav .nav-left #boton-inicio {
+    margin-left: 2px;
+    background-color: black;
+    color: white;
+  }
+}
+
+/*Inicio parte central del nav*/
+
+header nav .nav-center {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  height: 60%;
+  padding: 0px 20px 0px 20px;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  background-color: rgba(204, 204, 204, 0.49);
+}
+
+header nav .nav-center:hover {
+  background-color: rgba(103, 102, 102, 0.1);
+}
+
+header nav .nav-center img {
+  display: flex;
+  height: auto;
+  width: 20px;
+}
+
+/*estilo boton cerrar del buscador*/
+header nav .nav-center #close {
+  height: auto;
+  width: 20px;
+  padding: 9px;
+}
+
+header nav .nav-center #close:hover {
+  border-radius: 60px;
+  background-color: rgba(225, 222, 222, 0.246);
+  height: auto;
+  width: 20px;
+}
+
+header nav .nav-center input {
+  height: 5vh;
+  width: 90%;
+  border: none;
+  font-size: 20px;
+  padding-left: 20px;
+  background-color: rgba(225, 222, 222, 0.246);
+}
+header nav .nav-center input:hover {
+  background-color: transparent;
+}
+
+header nav .nav-center input:focus-visible {
+  outline: none;
+  outline-color: aqua;
+}
+
+/*Inicio Parte derecha del nav*/
+
+header nav .nav-right {
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+header nav .nav-right img {
+  height: auto;
+  width: 30px;
+}
+
+/*inicio Imagenes body*/
+
+#content {
+  position: absolute;
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  padding-right: 5px;
+}
+
+.images {
+  columns: 5 240px;
+  margin: auto;
+}
+
+.images .card-image {
+  position: relative;
+  padding: 6px;
+}
+
+.images .card-image img {
+  border-radius: 8%;
+  min-width: 240px;
+  max-width: 240px;
+}
+
+.card-image:hover > :first-child {
+  filter: brightness(60%);
+}
+
+.card-image:hover > * {
+  visibility: visible;
+  display: inline;
+}
+
+.button {
+  position: absolute;
+  left: 60%;
+  top: 5%;
+  background-color: #e60023;
+  padding: 13px 15px;
+  border-radius: 30px;
+  border: none;
+  visibility: hidden;
+  display: none;
+}
+
+.images .card-image button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans";
+}
+
+.ocultar-1 {
+  position: absolute;
+  left: 60%;
+  bottom: 8%;
+  background-color: #f0f0f0;
+  font-size: 30px;
+  border-radius: 50px;
+  color: #111111;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 4px;
+  visibility: hidden;
+  display: none;
+}
+
+.ocultar-2 {
+  position: absolute;
+  left: 78%;
+  bottom: 8%;
+  background-color: #f0f0f0;
+  font-size: 30px;
+  border-radius: 50px;
+  color: #111111;
+  font-weight: bolder;
+  font-size: 25px;
+  padding: 4px;
+  visibility: hidden;
+  display: none;
+}
